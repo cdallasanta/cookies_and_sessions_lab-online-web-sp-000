@@ -1,11 +1,11 @@
 class ProductsController < ApplicationController
   def index
-
   end
 
   def add
-    binding.pry
     if params[:item_name]
-    session[:cart] <<
+      session[:cart] << params[:item_name]
+    end
+    redirect_to '/'
   end
 end
