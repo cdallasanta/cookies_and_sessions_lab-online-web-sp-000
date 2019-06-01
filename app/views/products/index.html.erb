@@ -8,7 +8,7 @@ a text box where the user can enter the name of a product,
 a submit button that adds it to their cart -->
 
 <ul>
-<% cart.each do |item| %>
+<% session[:cart].each do |item| %>
   <li><%= item %></li>
 <% end %>
 </ul>
