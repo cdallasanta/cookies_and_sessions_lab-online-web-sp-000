@@ -1,4 +1,7 @@
-<%= form_tag '/add' %>
+<%= form_tag '/add' do %>
+  <%= text_field_tag :item_name %>
+  <%= submit_button %>
+<% end %>
 
 <!-- The page should have, at a minimum:
 a text box where the user can enter the name of a product,
