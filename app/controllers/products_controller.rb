@@ -3,8 +3,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-    if params[:item_name]
-      session[:cart] << params[:item_name]
+    if params[:product]
+      session[:cart] << params[:product]
     end
     redirect_to '/'
   end
